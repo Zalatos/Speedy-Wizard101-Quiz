@@ -41,7 +41,8 @@
     selectQuizAnswer = function(j) {
         if(localStorage.getItem("selectionInProgress") === "false") { //Quiz enhancement code
             localStorage.setItem("selectionInProgress", true); //Quiz enhancement code
-            var k = a.getElementsByClassName("answerBox");
+            //replaced variable a to the quiz container since a is no longer accessible from the orignal script context
+            var k = jQuery("#quizContainer").get(0).getElementsByClassName("answerBox");
             for (var h = 0; h < k.length; h++) {
                 if (k[h].children[0] === j) {
                     k[h].children[0].className = "largecheckboxselected";
