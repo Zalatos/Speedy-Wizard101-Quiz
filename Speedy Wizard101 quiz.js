@@ -27,9 +27,7 @@
     let htmlHead = document.getElementsByTagName("head")[0];
 
     //create the style text override
-    let revisedFadeStyle = ".fadeIn { \
-        animation: fadeIn 0s ease-out !important\
-    }";
+    let revisedFadeStyle = ".fadeIn { animation: fadeIn 0s ease-out !important }";
 
 
 
