@@ -39,7 +39,7 @@
 
     //override built in function for selecting quiz answer
     selectQuizAnswer = function(j) {
-        if(localStorage.getItem("selectionInProgress") === false) { //Quiz enhancement code
+        if(localStorage.getItem("selectionInProgress") === "false") { //Quiz enhancement code
             localStorage.setItem("selectionInProgress", true); //Quiz enhancement code
             var k = a.getElementsByClassName("answerBox");
             for (var h = 0; h < k.length; h++) {
