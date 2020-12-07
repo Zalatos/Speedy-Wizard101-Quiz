@@ -24,11 +24,5 @@
             }
         }
     }
-    if (typeof $ === "undefined"){
-        setTimeout(ZalatosWizard101QuizEnhancer,400);
-    }
-    else {
-        $(ZalatosWizard101QuizEnhancer);
-        $(()=>{console.debug("executed fadeIn removal script with jquery")});
-    }
+    setTimeout(ZalatosWizard101QuizEnhancer,200);
 })();
