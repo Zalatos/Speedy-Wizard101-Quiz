@@ -1,4 +1,4 @@
-/* global $ */
+/* global jQuery */
 // ==UserScript==
 // @name         Speedy Wizard101 Quiz
 // @namespace    http://tampermonkey.net/
@@ -13,16 +13,11 @@
     'use strict';
     console.debug("on wizard101 quiz");
     var ZalatosWizard101QuizEnhancer = () => {
-        console.debug("script to remove fade in running");
         //find answer boxes
-        let answers = document.getElementsByClassName("answer");
-        for (var i in answers ){
-            if(typeof answers[i].classList !== "undefined"){
-                console.debug("attempting to remove fadein from answer: " + answers[i].innerText);
-                answers[i].classList.remove("fadeIn");
-                console.debug(answers[i].classList);
-            }
-        }
+        console.debug("attempting to remove fadeIn from " + jQuery(".answer").length + " answers");
+        jQuery(".answer").removeClass("fadeIn");
+        console.debug("number of answers with fadeIn class remaining: " + jQuery(".fadeIn").length);
     }
-    setTimeout(ZalatosWizard101QuizEnhancer,200);
+        jQuery(ZalatosWizard101QuizEnhancer);
+        jQuery(()=>{console.debug("executed fadeIn removal script with jquery")});
 })();
