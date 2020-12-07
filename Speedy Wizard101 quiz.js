@@ -13,6 +13,7 @@
     'use strict';
     console.debug("on wizard101 quiz");
     var ZalatosWizard101QuizEnhancer = () => {
+        console.debug("script to remove fade in running");
         //find answer boxes
         let answers = document.getElementsByClassName("answer");
         for (var i in answers ){
