@@ -20,4 +20,17 @@
     }
         jQuery(ZalatosWizard101QuizEnhancer);
         jQuery(()=>{console.debug("executed fadeIn removal script with jquery")});
+
+    //method2
+    //revise fadeIn css class
+    //will addd the style script to the head so retrieve the head
+    let htmlHead = document.getElementsByTagName("head")[0];
+
+    //create the style text override
+    let revisedFadeStyle = ".fadeIn { \
+        animation: fadeIn 0s ease-out !important\
+    }";
+
+
+
 })();
