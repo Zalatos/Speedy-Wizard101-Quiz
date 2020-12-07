@@ -1,4 +1,4 @@
-/* global jQuery,selectQuizAnswer */
+/* global jQuery,selectQuizAnswer,a */
 // ==UserScript==
 // @name         Speedy Wizard101 Quiz
 // @namespace    http://tampermonkey.net/
@@ -38,7 +38,7 @@
     htmlHead.appendChild(styleEle);
 
     //override built in function for selecting quiz answer
-    selectQuizAnswer  = function(j) {
+    selectQuizAnswer = function(j) {
         if(localStorage.getItem("selectionInProgress") === true) { //Quiz enhancement code
             localStorage.setItem("selectionInProgress", true); //Quiz enhancement code
             var k = a.getElementsByClassName("answerBox");
