@@ -41,7 +41,6 @@
 
     //override built in function for selecting quiz answer
     selectQuizAnswer = function(selectedCheckbox) {
-        console.debug(localStorage.getItem("selectionInProgress"));
         if(localStorage.getItem("selectionInProgress") === "false") { //Quiz enhancement code
             localStorage.setItem("selectionInProgress", true); //Quiz enhancement code
             var k = document.querySelectorAll(".answerBox");
@@ -54,7 +53,7 @@
                     k[h].children[1].checked = ""
                 }
             }
-            
+
             //change the value after this cpu clock cycle.
             //this is to overcome the function running twice when using the actual checkbox for selection purposes
             setTimeout(()=>{localStorage.setItem("selectionInProgress", false)},10); //Quiz enhancement code
