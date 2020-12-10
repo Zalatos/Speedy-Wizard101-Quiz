@@ -14,7 +14,7 @@
     console.debug("on wizard101 quiz");
     var ZalatosWizard101QuizEnhancer = () => {
         //show answers imeddiately
-        jQuery(".answer").css("visibility", "visible");
+        jQuery(".answer").css("visibility", "visible").addClass("fadeIn");
         //show next button immediately
         jQuery("button").css("visibility", "visible");
 
