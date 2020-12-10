@@ -34,7 +34,9 @@
     let htmlHead = document.getElementsByTagName("head")[0];
 
     //create the style text override
-    let revisedFadeStyle = ".fadeIn { animation: fadeIn 0s ease-out !important }";
+    let revisedFadeStyle = ".fadeIn { animation: fadeIn 0s ease-out !important }" +
+        " div.answer.fadeIn:hover { background-color: #bb9461; color: #000;}" +
+        " div.answer.fadeIn { cursor: pointer; border-radius: 5px; }";
     let styleEle = document.createElement("style");
     styleEle.innerHTML = revisedFadeStyle;
     htmlHead.appendChild(styleEle);
