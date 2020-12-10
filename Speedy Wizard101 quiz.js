@@ -36,7 +36,7 @@
     //create the style text override
     let revisedFadeStyle = ".fadeIn { animation: fadeIn 0s ease-out !important }" +
         " div.answer.fadeIn:hover { background-color: #bb9461; color: #000;}" +
-        " div.answer.fadeIn { cursor: pointer; border-radius: 5px; padding: 10px 0 10px 25px}";
+        " div.answer.fadeIn { cursor: pointer; border-radius: 5px; margin:auto; padding: 10px 0 10px 25px}";
     let styleEle = document.createElement("style");
     styleEle.innerHTML = revisedFadeStyle;
     htmlHead.appendChild(styleEle);
