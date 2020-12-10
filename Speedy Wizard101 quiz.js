@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         Speedy Wizard101 Quiz
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Revise wizard101. quiz to make it faster to do the quiz
 // @author       Zalatos
 // @match        https://www.wizard101.com/quiz/trivia/game*
@@ -36,7 +36,7 @@
     //create the style text override
     let revisedFadeStyle = ".fadeIn { animation: fadeIn 0s ease-out !important }" +
         " div.answer.fadeIn:hover { background-color: #bb9461; color: #000;}" +
-        " div.answer.fadeIn { cursor: pointer; border-radius: 5px; }";
+        " div.answer.fadeIn { cursor: pointer; border-radius: 5px; padding: 10px 0 10px 25px}";
     let styleEle = document.createElement("style");
     styleEle.innerHTML = revisedFadeStyle;
     htmlHead.appendChild(styleEle);
